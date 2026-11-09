@@ -64,8 +64,11 @@ the instructor's flat-volatility extrapolation beyond observed strikes.
 Final full-suite verification on November 9: **42 passed, 2 failed, no skips**.
 The only failures are the two student-owned GitHub Skills completion flags.
 Report: `_output/final_test_results.xml`. All 17 graded points in Parts B–D
-pass locally. The full default pipeline is being rechecked after the date
-rolled over; its pulls are retrying transient Databento server/stream errors.
+pass locally. The course runner independently confirmed **17/19** on commit
+`6b1146b` (run `42642766898`): B=5/5, C=8/8, D=4/4; only Part A fails.
+An additional full default run after the date rolled over was stopped during
+repeated Databento HTTP 500/stream retries. This was a redundant refresh;
+the earlier complete local build and the cloud refresh both succeeded.
 
 Public source repository: https://github.com/Weijie-Shen/svix-crash-monitor
 
@@ -81,6 +84,8 @@ succeeded. The public page was verified in a browser before setting
 `src/published_site.py` to completed. The four-week backfill from October 12
 succeeded (run `42567801431`): 20 unique sessions through November 6, no
 duplicate dates, and the expected ordering of the three crash probabilities.
+The subsequent deployment `42642761551` successfully restored this history,
+ran the daily update, and published the 20-session page to `gh-pages`.
 
 The local `uv run doit latest` also succeeded. It found no new sessions and
 left the history byte-for-byte unchanged (five rows, five unique dates).
