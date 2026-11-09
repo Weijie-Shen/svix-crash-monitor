@@ -5,6 +5,6 @@
 # branch. The steps are in the README. When the site is live, set the flag to
 # True and paste the address of the site itself
 # (https://<username>.github.io/<repository>/) and of the public repository.
-I_HAVE_DEPLOYED_MY_MONITOR = False
-URL_TO_MY_MONITOR_SITE = "YOUR_SITE_URL"
-URL_TO_MY_PUBLIC_REPO = "YOUR_REPO_URL"
+I_HAVE_DEPLOYED_MY_MONITOR = True
+URL_TO_MY_MONITOR_SITE = "https://weijie-shen.github.io/svix-crash-monitor/"
+URL_TO_MY_PUBLIC_REPO = "https://github.com/Weijie-Shen/svix-crash-monitor"
